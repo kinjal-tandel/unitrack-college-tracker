@@ -43,11 +43,11 @@ Unitrack helps students manage their academic and personal tasks in one place.
 ## Dashboard
 <img src="screenshots/dashboard.png" width="700">
 
-## Assignment tracking
-<img src="screenshots/assignment.png" width="700">
-
 ## Attendance tracking
 <img src="screenshots/attendance.png" width="700">
+
+## Expense tracking
+<img src="screenshots/expense.png" width="700">
 
 ## SGPA calculator
 <img src="screenshots/sgpa.png" width="700">
