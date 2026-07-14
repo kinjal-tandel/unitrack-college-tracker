@@ -1,9 +1,8 @@
-#UniTrack
-
+# UniTrack
 Full-stack student productivity platform built using **Flask** and **SQLite**.
 Unitrack helps students manage their academic and personal tasks in one place.
 
-##Manage
+## Manage
 - Timetable
 - Assignments
 - Expenses
@@ -11,7 +10,7 @@ Unitrack helps students manage their academic and personal tasks in one place.
 - SGPA calculator
 - User authentication
 
-#Features
+# Features
 - Login, Signup & Logout
 - Multiple user support
 - Attendance percentage calculation
@@ -22,45 +21,45 @@ Unitrack helps students manage their academic and personal tasks in one place.
 - Dashboard overview
 - Responsive design
 
-#Tech Stack
+# Tech Stack
 
-##Frontend
+## Frontend
 - HTML
 - CSS
 - JavaScript
 
-##Backend
+## Backend
 - Flask
 
-##Database
+## Database
 - SQLite
 
-##Authentication
+## Authentication
 - Flask sessions
 - Werkzeug password hashing
 
-#Screenshots
+# Screenshots
 
-##Dashboard
+## Dashboard
 <img src="screenshots/dashboard.png" width="700">
 
-##Assignment tracking
+## Assignment tracking
 <img src="screenshots/assignment.png" width="700">
 
-##Attendance tracking
+## Attendance tracking
 <img src="screenshots/attendance.png" width="700">
 
-##SGPA calculator
+## SGPA calculator
 <img src="screenshots/sgpa.png" width="700">
 
-#What I learned
+# What I learned
 - Flask REST APIS
 - SQLite database design
 - Authentication & sessions
 - Async JavaScript
 - Full-stack debugging
 
-#Future improvements
+# Future improvements
 - Notifications
 - Due-date reminders
 - Better analytics
