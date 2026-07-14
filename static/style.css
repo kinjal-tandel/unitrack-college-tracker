@@ -111,10 +111,14 @@ button:hover{
     }
     nav{
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
     }
     nav button{
-        flex: 1 1 auto;
+        flex: 0 1 auto;
         text-align: center;
+        font-size: 1rem;
+        padding: 0.4rem 0.7rem; 
     }
     section{
         padding: 1rem;
