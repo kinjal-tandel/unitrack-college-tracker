@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify, session
 from werkzeug.security import generate_password_hash, check_password_hash
 import sqlite3
+import setup_db
 app = Flask(__name__)
 app.secret_key = 'change-this-to-something-random'
 @app.route('/')
@@ -214,7 +215,7 @@ def delete_subject_route(id):
 @app.route('/api/signup', methods=['POST'])
 def signup():
     data = request.get_json()
-    username = data .get('username')
+    username = data.get('username')
     password = data.get('password')
     if not username or not password:
         return jsonify({'error': 'Username and password required'}), 400
