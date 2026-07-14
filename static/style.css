@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(201, 7, 98);
+    padding: 2rem;
+    background-image: url('pink3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color:beige;
+    text-align: center;
+}
+nav{
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    justify-content: space-around;
+}
+nav button{
+    background: none;
+    border: none;
+    padding: 0.5rem 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all in 0.15s ease;
+}
+nav button.hover{
+    background: #eaeaea;
+    color: #222;
+}
+nav button.active{
+    background: rgb(202, 10, 100);
+    color: white;
+}
+section{
+    background: rgba(244, 244, 233, 0.911);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    display: none;
+}
+section.active{
+    display: block;
+}
+section h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #161616;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+th,td{
+    text-align: left;
+    padding: 0.6rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+th{
+    color: #666;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+input{
+    padding: 0.4rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    border: 0.5px solid #ddd;
+    font-size: 0.90rem;
+}
+button{
+    background: rgb(224, 37, 124);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+button:hover{
+    opacity: 0.9;
+}
+#authMessage{
+    margin-top: 0.8rem;
+    color: #ea6080;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px){
+    body{
+        padding: 1rem;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    nav button{
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    section{
+        padding: 1rem;
+    }
+}

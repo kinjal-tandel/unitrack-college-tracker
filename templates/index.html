@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>UniTrack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h2> UniTRACK</h2>
+    <nav>
+        <button onclick="showSection('dashboard')">Dashboard</button>
+        <button onclick="showSection('timetable')">Timetable</button>
+        <button onclick="showSection('assignments')">Assignments</button>
+        <button onclick="showSection('attendance')">Attendance</button>
+        <button onclick="showSection('sgpa')">SGPA</button>
+        <button onclick="showSection('expenses')">Expenses</button>
+        <button onclick="showSection('login')">Login</button>
+    </nav>
+    <section id="timetable">
+        <h3>Timetable</h3>
+        <input type="text" id="classSubject" placeholder="Subject">
+        <input type="text" id="classDay" placeholder="Day(eg.Mon)">
+        <input type="time" id="classTime" placeholder="Time">
+        <button onclick="addClass()">Add Class</button>
+        <table>
+            <thead>
+                <tr><th>Subject</th><th>Day</th><th>Time</th></tr>
+            </thead>
+        <tbody id="timetableList"></tbody>
+        </table>
+    </section>
+    <section id="assignments">
+        <h3>Assignments</h3>
+        <input type="text" id="assignmentName" placeholder="Assignment Name">
+        <input type="date" id="assignmentDue" placeholder="Due on">
+        <button onclick="addAssignment()">Add Assignment</button>
+        <table>
+            <thead>
+                <tr><th>Assignment</th><th>Due date</th><th>Status</th><th></th></tr>
+            </thead>
+        <tbody id="assignmentList"></tbody>
+        </table>
+    </section>
+    <section id="expenses">
+        <h3>Expenses</h3>
+        <input type="text" id="expenseName" placeholder="What did you spend on?">
+        <input type="number" id="expenseAmount" placeholder="Amount">
+        <button onclick="addExpense()">Add Expense</button>
+        <table>
+            <thead>
+                <tr><th>Item</th><th>Amount</th></tr>
+            </thead>
+        <tbody id="expenseList"></tbody>
+        </table>
+        </section>
+    <section id="attendance">
+        <h3>Attendance</h3>
+        <input type="text" id="attSubject" placeholder="Subject">
+        <input type="number" id="attHeld" placeholder="Total Classes">
+        <input type="number" id="attAttended" placeholder="Classes Attended">
+        <button onclick="addAttendance()">Add</button>
+        <table>
+            <thead>
+                <tr><th>Subject</th><th>Total</th><th>Attended</th><th>%</th><th></th></tr>
+            </thead>
+            <tbody id="attendanceList"></tbody>
+        </table>
+    </section>
+    <section id="sgpa">
+        <h3>SGPA Calculator</h3>
+        <input type="text" id="subjectName" placeholder="Subject">
+        <input type="number" id="subjectCredit" placeholder="Credits">
+        <input type="number" id="subjectGrade" placeholder="Grade Point (0-10)">
+        <button onclick="addSubject()">Add Subject</button>
+        <table>
+            <thead>
+                <tr><th>Subject</th><th>Credits</th><th>Grade Point</th><th></th></tr>
+            </thead>
+            <tbody id="subjectList"></tbody>
+        </table>
+        <h3 id="sgpaResult">SGPA: 0.00</h3>
+    </section>
+    <section id="dashboard">
+        <h3>Dashboard</h3>
+        <div id="dashboardSummary"></div>
+    </section>
+    <section id="login">
+        <h3>Login</h3>
+        <input type="text" id="loginUsername" placeholder="Username"><br>
+        <input type="password" id="loginPassword" placeholder="Password"><br>
+        <button onclick="login()">Login</button>
+        <button onclick="signup()">Sign Up</button><br>
+        <button onclick="logout()">Logout</button>
+        <p id="authMessage"></p>
+    </section>
+    
+    <script src="{{ url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
